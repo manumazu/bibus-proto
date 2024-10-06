@@ -115,7 +115,7 @@ void lightLEDsFromMessage() {
     
     // light on leds coordinates and colors
     for (int i=ledStart; i<(ledStart + ledOffset); i++) { 
-      if(red > 0 && green > 0 && blue > 0)
+      if(red >= 0 && green >= 0 && blue >= 0)
         leds[i] = CRGB(red,green,blue);
       else
         leds[i] = CRGB::Blue;
